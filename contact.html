@@ -1,0 +1,414 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Contact Us | Bright Wheeler Group</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Contact Bright Wheeler Group for professional management services for waterfront properties, parks, and recreational facilities." />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/bwg-style.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Contact Page Specific Styles */
+        .contact-section {
+            padding: 5em 0;
+        }
+        
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2em;
+            gap: 4em;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-info h2 {
+            font-size: 2.2em;
+            color: #2c7a6e;
+            margin-bottom: 0.5em;
+        }
+        
+        .contact-info .tagline {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 2em;
+            line-height: 1.6;
+        }
+        
+        .contact-details {
+            margin: 2em 0;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5em;
+        }
+        
+        .contact-item .icon {
+            width: 50px;
+            height: 50px;
+            background: #2c7a6e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1em;
+            color: #fff;
+            font-size: 1.2em;
+        }
+        
+        .contact-item .details h4 {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 0.25em;
+        }
+        
+        .contact-item .details p {
+            color: #666;
+            margin: 0;
+        }
+        
+        .contact-item .details a {
+            color: #2c7a6e;
+            text-decoration: none;
+        }
+        
+        .contact-item .details a:hover {
+            text-decoration: underline;
+        }
+        
+        .office-hours {
+            background: #f8f9fa;
+            padding: 1.5em;
+            border-radius: 16px;
+            margin-top: 2em;
+        }
+        
+        .office-hours h3 {
+            color: #2c7a6e;
+            margin-bottom: 1em;
+            font-size: 1.2em;
+        }
+        
+        .office-hours p {
+            margin-bottom: 0.5em;
+            color: #666;
+        }
+        
+        /* Form Styles */
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #333;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75em 1em;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2c7a6e;
+    background: #ffffff;
+}
+        .submit-btn {
+            background: #2c7a6e;
+            color: #fff;
+            border: none;
+            padding: 1em 2em;
+            font-size: 1em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background: #1a4d44;
+            transform: translateY(-3px);
+        }
+        
+        /* Locations Grid */
+        .locations-grid {
+            background: #f8f9fa;
+            padding: 5em 0;
+        }
+        
+        .locations-grid .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2em;
+            text-align: center;
+        }
+        
+        .locations-grid h2 {
+            font-size: 2.2em;
+            color: #2c7a6e;
+            margin-bottom: 0.5em;
+        }
+        
+        .locations-grid .section-subtitle {
+            color: #666;
+            margin-bottom: 3em;
+        }
+        
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            justify-content: center;
+        }
+        
+        .location-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 1.5em;
+            width: calc(33.33% - 2em);
+            min-width: 250px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+        
+        .location-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .location-card h3 {
+            color: #2c7a6e;
+            margin-bottom: 0.5em;
+        }
+        
+        .location-card p {
+            color: #666;
+            margin-bottom: 0.5em;
+        }
+        
+        .location-card .address {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 1em;
+            padding-top: 1em;
+            border-top: 1px solid #eee;
+        }
+        
+        /* Map Section */
+        .map-section {
+            padding: 0;
+        }
+        
+        .map-container {
+            width: 100%;
+            height: 400px;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        /* Responsive */
+        @media screen and (max-width: 840px) {
+            .contact-container {
+                flex-direction: column;
+                gap: 2em;
+            }
+            
+            .location-card {
+                width: calc(50% - 1em);
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .location-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1 id="logo"><a href="index.html">BRIGHT WHEELER <span>GROUP</span></a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="submenu">
+                        <a href="#">Services</a>
+                        <ul>
+                            <li><a href="food-beverage.html">Food & Beverage</a></li>
+                            <li><a href="outdoor-recreation.html">Outdoor Recreation</a></li>
+                            <li><a href="waterfront.html">Waterfront Management</a></li>
+                            <li><a href="retail.html">Retail Management</a></li>
+                            <li><a href="parks.html">Park Management</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>CONTACT US</h1>
+            <p class="subtitle">Let's discuss how Bright Wheeler Group can help you achieve clear management and strong results</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p class="tagline">We're ready to help you elevate your waterfront and recreational operations. Reach out to our team today.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="details">
+                                <h4>Headquarters</h4>
+                                <p>Bright Wheeler Group<br>300 N Beach Rd, <br>Dania Beach, FL 33004</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="details">
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@brightwheelergroup.com">info@brightwheelergroup.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="details">
+                                <h4>Office Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday - Sunday: By Appointment</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="office-hours">
+                        <h3>24/7 Emergency Support</h3>
+                        <p>For urgent waterfront or facility issues, our emergency response team is available 24 hours a day, 7 days a week.</p>
+                        <p><strong>Emergency Hotline:</strong> <a href="tel:+15559876543">(808) 480-8800</a></p>
+                    </div>
+                </div>
+                
+<!-- Contact Form with Formspree -->
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/mnjljgrg" method="POST" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service of Interest *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="Food & Beverage">Food & Beverage</option>
+                                <option value="Outdoor Recreation">Outdoor Recreation</option>
+                                <option value="Waterfront Management">Waterfront Management</option>
+                                <option value="Retail Management">Retail Management</option>
+                                <option value="Park Management">Park Management</option>
+                                <option value="Other / General Inquiry">Other / General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" id="submit-btn">Send Message</button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="services-cta">
+            <h2>Ready to elevate your operations?</h2>
+            <p>Let's discuss how Bright Wheeler Group can help you achieve clear management and strong results.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; Bright Wheeler Group. All rights reserved.</li>
+                <li>Clear Management. Strong Results.</li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Back to Top Button -->
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</body>
+</html>

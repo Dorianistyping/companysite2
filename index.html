@@ -1,0 +1,656 @@
+<!DOCTYPE HTML>
+<!--
+    Twenty by HTML5 UP (Modified for Bright Wheeler Group)
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license
+-->
+<html>
+<head>
+    <title>Bright Wheeler Group | Waterfront Management</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Bright Wheeler Group - Professional management contracting for piers, marinas, and waterfront restaurants." />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Modern Video Hero Section */
+        .video-hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            overflow: hidden;
+            color: #fff;
+        }
+        
+        .video-hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translateX(-50%) translateY(-50%);
+            object-fit: cover;
+            z-index: 0;
+        }
+        
+        .video-hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        
+        .video-hero .inner {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .video-hero h2 {
+            font-size: 4em;
+            font-weight: 900;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 0.5em;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .video-hero p {
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        
+        .video-hero .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+        }
+        
+        .video-hero .scroll-indicator a {
+            color: #fff;
+            font-size: 2em;
+            border: none;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-20px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+        }
+        
+        /* Modern Stats Section */
+        .stats-section {
+            background: linear-gradient(135deg, #2c7a6e 0%, #1a4d44 100%);
+            color: #fff;
+            padding: 4em 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1em;
+        }
+        
+        .stat-number {
+            font-size: 3.5em;
+            font-weight: 900;
+            display: block;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0.9;
+        }
+        
+        /* Locations Block - Matching backgrounds */
+        .locations-block {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            background: #f8f9fa;
+        }
+        
+        .locations-map {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+            overflow: hidden;
+            background: #f8f9fa;
+        }
+        
+       .locations-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* Removed the transition for zoom */
+}
+
+/* Removed the hover zoom effect completely */
+.locations-map:hover img {
+    transform: none; /* No zoom */
+}
+        .locations-content {
+            flex: 1;
+            padding: 4em;
+            background: #f8f9fa;
+        }
+        
+        .locations-content h3 {
+            font-size: 2.5em;
+            color: #2c7a6e;
+            margin-bottom: 0.5em;
+        }
+        
+        .locations-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 2em;
+        }
+        
+        .locations-list li {
+            padding: 0.75em 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        
+        .locations-list li:before {
+            content: '\f3c5';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: #2c7a6e;
+            margin-right: 1em;
+        }
+        
+        /* Service Cards Modern - ALL ICONS SAME GREEN */
+        .service-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 2em;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-card .icon {
+            font-size: 3em;
+            color: #2c7a6e;
+            margin-bottom: 1em;
+        }
+        
+        .service-card h3 {
+            color: #333;
+            margin-bottom: 1em;
+            font-size: 1.5em;
+        }
+        
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Operation Cards */
+        .operation-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            margin-bottom: 2em;
+        }
+        
+        .operation-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .operation-card .image {
+            height: 250px;
+            overflow: hidden;
+        }
+.operation-card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* Removed the transition for zoom */
+}
+
+/* Removed the hover zoom effect completely */
+.operation-card:hover .image img {
+    transform: none; /* No zoom */
+}
+        
+        .operation-card .content {
+            padding: 1.5em;
+        }
+        
+/* CTA Section Modern */
+.cta-modern {
+    background: linear-gradient(135deg, #1a4d44 0%, #0d2d26 100%);
+    color: #fff;
+    text-align: center;
+    padding: 5em 2em;
+}
+
+.cta-modern h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.cta-modern .button {
+    background: #fff;
+    color: #1a1a1a;  /* Black/dark text */
+    border: none;
+    margin-top: 1.5em;
+    transition: all 0.3s ease;
+}
+
+.cta-modern .button:hover {
+    background: #2c7a6e;  /* Your light accent green */
+    color: #fff;  /* White text on hover */
+    transform: translateY(-3px);
+}        
+        /* Responsive */
+        @media screen and (max-width: 840px) {
+            .video-hero h2 {
+                font-size: 2em;
+            }
+            
+            .video-hero p {
+                font-size: 1em;
+            }
+            
+            .locations-block {
+                flex-direction: column;
+            }
+            
+            .locations-content {
+                padding: 2em;
+            }
+            
+            .locations-content h3 {
+                font-size: 1.8em;
+            }
+            
+            .stat-number {
+                font-size: 2em;
+            }
+        }
+
+        /* Footer Styles */
+        #footer {
+            background: #E8EEF4;
+            color: #7c8081;
+            padding: 4em 2em;
+            text-align: center;
+        }
+        
+        #footer .copyright {
+            font-size: 0.8em;
+            line-height: 1em;
+            margin-top: 2em;
+        }
+        
+        #footer .copyright li {
+            display: inline-block;
+            margin-left: 1em;
+            padding-left: 1em;
+            border-left: dotted 1px;
+        }
+        
+        #footer .copyright li:first-child {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        
+        .icons {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 2em;
+        }
+        
+        .icons li {
+            display: inline-block;
+            margin: 0 0.5em;
+        }
+        
+        .icon.circle {
+            border-radius: 100%;
+            display: inline-block;
+            width: 2.5em;
+            height: 2.5em;
+            line-height: 2.5em;
+            text-align: center;
+            background: rgba(0,0,0,0.1);
+            transition: all 0.2s ease;
+        }
+        
+        .icon.circle:hover {
+            transform: translateY(-3px);
+            background: #2c7a6e;
+            color: #fff;
+        }
+        
+        /* Property type badge styling */
+        .property-type {
+            display: inline-block;
+            background: #2c7a6e;
+            color: #fff;
+            font-size: 0.75em;
+            padding: 0.3em 0.8em;
+            border-radius: 20px;
+            margin-top: 1em;
+            letter-spacing: 0.5px;
+        }
+        
+        .operation-card .content h3 i {
+            color: #2c7a6e;
+            margin-right: 0.5em;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1 id="logo"><a href="index.html">BRIGHT WHEELER <span>GROUP</span></a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="submenu">
+                        <a href="#">Services</a>
+                        <ul>
+                            <li><a href="food-beverage.html">Food & Beverage</a></li>
+                            <li><a href="outdoor-recreation.html">Outdoor Recreation</a></li>
+                            <li><a href="waterfront.html">Waterfront Management</a></li>
+                            <li><a href="retail.html">Retail Management</a></li>
+                            <li><a href="parks.html">Park Management</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Modern Video Hero Section - Pier Video -->
+        <section class="video-hero">
+            <video autoplay muted loop playsinline poster="images/hero-poster.jpg">
+                <source src="images/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+            <div class="inner">
+                <h2>BRIGHT WHEELER GROUP</h2>
+                <p>Clear Management. Strong Results.</p>
+                <p style="font-size: 1.2em; margin-top: 1em;">Managing complex waterfront properties<br />with experience and clarity.</p>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#main" class="scrolly"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <article id="main">
+
+            <!-- About Section -->
+            <header class="special container" id="about">
+                <span class="icon solid fa-chart-bar"></span>
+                <h2>Managing complex <strong>waterfront properties</strong><br />with experience and clarity.</h2>
+                <p>Bright Wheeler Group is a management contracting firm focused on piers, marinas, and waterfront restaurants. 
+                We provide practical oversight, clear communication, and dependable execution for marine environments 
+                where experience matters.</p>
+            </header>
+
+            <!-- Modern Stats Section -->
+            <section class="stats-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-12-narrower">
+                            <div class="stat-item">
+                                <span class="stat-number">40+</span>
+                                <span class="stat-label">Combined Experience</span>
+                            </div>
+                        </div>
+                        <div class="col-3 col-12-narrower">
+                            <div class="stat-item">
+                                <span class="stat-number">1M+</span>
+                                <span class="stat-label">Customers Served</span>
+                            </div>
+                        </div>
+                        <div class="col-3 col-12-narrower">
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
+                        </div>
+                        <div class="col-3 col-12-narrower">
+                            <div class="stat-item">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Support Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section with Food, Retail, Admissions Cards - ALL GREEN ICONS -->
+            <section class="wrapper style3 container special">
+                <header class="major">
+                    <h2>Our <strong>Services</strong></h2>
+                </header>
+
+                <div class="row">
+                    <!-- Food Service Card -->
+                    <div class="col-4 col-12-narrower">
+                        <div class="service-card">
+                            <i class="icon solid fa-utensils"></i>
+                            <h3>Food</h3>
+                            <p>We don't just provide excellent food for your guests, but also strategy, creativity, and the right people to make the service at your cultural attraction exemplary every single time.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Retail Service Card -->
+                    <div class="col-4 col-12-narrower">
+                        <div class="service-card">
+                            <i class="icon solid fa-shopping-bag"></i>
+                            <h3>Retail</h3>
+                            <p>Our approach to retail is mission-focused, revenue-driving, with a unique strategy that touches every aspect of your guest experience.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Admissions Service Card -->
+                    <div class="col-4 col-12-narrower">
+                        <div class="service-card">
+                            <i class="icon solid fa-ticket-alt"></i>
+                            <h3>Admissions</h3>
+                            <p>By streamlining your ticketing into a digital interface, we help you track accurate guest data allowing us to serve their needs better in the future.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- LOCATIONS BLOCK: Map image on left, content on right - MATCHING BACKGROUNDS -->
+            <section class="locations-block">
+                <div class="locations-map">
+                    <img src="images/map.png" alt="Florida Map with Locations"/>
+                </div>
+                <div class="locations-content">
+                    <h3>Our Locations</h3>
+                    <p> From the bustling marinas of South Florida to the serene golf coast waterways, Bright Wheeler Group provides dedicated, on-site management and operational support across the state. We pride ourselves on being where our clients need us, when they need us</p>
+                    <p>With strategically placed operations throughout Florida, our team delivers hands-on management, rapid response times, and deep local knowledge of each community's unique waterfront regulations and challenges. Whether it's a public pier drawing thousands of visitors daily or an exclusive golf club restaurant serving members, we bring the same level of commitment and expertise to every property we manage.</p>
+
+                </div>
+            </section>
+
+            <!-- What We Specialize In Section -->
+            <section class="wrapper style1 container special">
+                <header class="major">
+                    <h2>What We <strong>Specialize In</strong></h2>
+                </header>
+                <div class="row">
+                    <div class="col-6 col-12-narrower">
+                        <div class="operation-card">
+                            <div class="image">
+                        <img src="images/index/1.jpeg"  alt="Public Pier Management"/>
+                            </div>
+                            <div class="content">
+                                <h3><i class="fas fa-water"></i> Piers & Boardwalks</h3>
+                                <p>Comprehensive management for public and private piers, including operational coordination, vendor oversight, safety compliance, and waterfront facility maintenance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-12-narrower">
+                        <div class="operation-card">
+                            <div class="image">
+                                <img src="images/index/2.jpeg" alt="Marina Management"/>
+                            </div>
+                            <div class="content">
+                                <h3><i class="fas fa-ship"></i> Marinas & Docks</h3>
+                                <p>Full-service marina management including dock operations, tenant coordination, maintenance oversight, and guest services for boat slips and waterfront facilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 col-12-narrower">
+                        <div class="operation-card">
+                            <div class="image">
+                                  <img src="images/index/3.jpeg" alt="Golf Club Management"/>
+                            </div>
+                            <div class="content">
+                                <h3><i class="fas fa-golf-ball"></i> Golf Clubs & Country Clubs</h3>
+                                <p>Operational management for golf facilities, including restaurant oversight, event coordination, food & beverage services, and daily club operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-12-narrower">
+                        <div class="operation-card">
+                            <div class="image">
+                              <img src="images/index/4.jpeg" alt="Waterfront Restaurant Management"/>
+                            </div>
+                            <div class="content">
+                                <h3><i class="fas fa-utensils"></i> Waterfront Restaurants</h3>
+                                <p>Management services for high-traffic waterfront dining establishments, focusing on coordination, compliance, daily operations, and exceptional guest experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 col-12-narrower">
+                        <div class="operation-card">
+                            <div class="image">
+                               <img src="images/index/5.jpeg" alt="Event Venue Management"/>
+                            </div>
+                            <div class="content">
+                                <h3><i class="fas fa-calendar-alt"></i> Venues</h3>
+                                <p>Comprehensive management of waterfront event spaces, including private events, vendor coordination, facility maintenance, and guest services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-12-narrower">
+                        <div class="operation-card">
+                            <div class="image">
+                                <img src="images/index/6.jpeg" alt="Retail & Admissions"/>
+                            </div>
+                            <div class="content">
+                                <h3><i class="fas fa-ticket-alt"></i> Retail & Admissions</h3>
+                                <p>Strategic retail management and digital ticketing solutions that drive revenue and provide accurate guest data for better service delivery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modern CTA Section -->
+            <section class="cta-modern">
+                <h2>Ready to elevate your waterfront operations?</h2>
+                <p>Let's discuss how Bright Wheeler Group can help you achieve clear management and strong results.</p>
+                <a href="contact.html" class="button large">Get In Touch</a>
+            </section>
+
+        </article>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; Bright Wheeler Group. All rights reserved.</li>
+                <li>Clear Management. Strong Results.</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Font Awesome for additional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        // Smooth scroll for anchor links
+        $(document).ready(function() {
+            $('.scrolly').click(function(e) {
+                e.preventDefault();
+                var target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 800);
+            });
+        });
+    </script>
+</body>
+</html>

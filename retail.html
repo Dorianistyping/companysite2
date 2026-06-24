@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Retail Management | Bright Wheeler Group</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/bwg-style.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body>
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1 id="logo"><a href="index.html">BRIGHT WHEELER <span>GROUP</span></a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="submenu">
+                        <a href="#">Services</a>
+                        <ul>
+                            <li><a href="food-beverage.html">Food & Beverage</a></li>
+                            <li><a href="outdoor-recreation.html">Outdoor Recreation</a></li>
+                            <li><a href="waterfront.html">Waterfront Management</a></li>
+                            <li><a href="retail.html">Retail Management</a></li>
+                            <li><a href="parks.html">Park Management</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>RETAIL MANAGEMENT</h1>
+            <p class="subtitle">Experts in retail management for cultural and recreational destinations</p>
+        </section>
+
+        <article id="main">
+            <!-- Overview Block -->
+            <section class="service-block">
+                <div class="service-wrapper">
+                    <div class="service-container">
+                        <div class="service-image">
+                            <img src="images/retail/0.jpeg" alt="Retail Management Overview"/>
+                        </div>
+                        <div class="service-content">
+                            <h2>RETAIL EXCELLENCE</h2>
+                            <p>We continuously optimize our establishments to ensure both facility and personnel excellence. With outstanding hospitality and welcoming environments, we drive convenient, enjoyable user experiences that maximize revenue and loyalty.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Retail Expertise Block -->
+            <section class="service-block">
+                <div class="service-wrapper">
+                    <div class="service-container">
+                        <div class="service-image">
+                             <img src="images/retail/1.jpeg" alt="Retail Expertise"/>
+                        </div>
+                        <div class="service-content">
+                            <h2>OPERATIONAL EXCELLENCE</h2>
+                            <p>Our retail management expertise spans every aspect of store operations, from daily cost control to strategic planning. We ensure that every retail location operates at peak efficiency while delivering exceptional customer experiences.</p>
+                            <ul class="service-features">
+                                <li>Daily cost control</li>
+                                <li>Risk management</li>
+                                <li>Payroll management</li>
+                                <li>Loss prevention</li>
+                                <li>Digital storefronts</li>
+                                <li>Inventory management</li>
+                                <li>Marketing execution</li>
+                                <li>Store presentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- E-Commerce & Digital Block -->
+            <section class="service-block">
+                <div class="service-wrapper">
+                    <div class="service-container">
+                        <div class="service-image">
+                           <img src="images/retail/2.jpeg" alt="E-Commerce"/>
+                        </div>
+                        <div class="service-content">
+                            <h2>DIGITAL COMMERCE</h2>
+                            <p>Through utilizing e-commerce channels, we have the capability to further support client brands throughout and beyond their retail journeys. Our digital solutions extend your reach and create seamless shopping experiences across all channels.</p>
+                            <ul class="service-features">
+                                <li>Online store development</li>
+                                <li>Omnichannel integration</li>
+                                <li>Digital marketing strategy</li>
+                                <li>Customer loyalty programs</li>
+                                <li>Data analytics and reporting</li>
+                                <li>Brand extension strategies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- CTA -->
+            <section class="services-cta">
+                <h2>Ready to elevate your retail operations?</h2>
+                <p>Let's discuss how Bright Wheeler Group can help you maximize revenue and create exceptional retail experiences.</p>
+                <a href="contact.html" class="button large">Get In Touch</a>
+            </section>
+        </article>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; Bright Wheeler Group. All rights reserved.</li>
+                <li>Clear Management. Strong Results.</li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        $(document).ready(function() {
+            var backToTop = $('#backToTop');
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 300) {
+                    backToTop.addClass('visible');
+                } else {
+                    backToTop.removeClass('visible');
+                }
+            });
+            backToTop.click(function(e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 600);
+            });
+        });
+    </script>
+</body>
+</html>
